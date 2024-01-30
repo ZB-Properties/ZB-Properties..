@@ -1,0 +1,171 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap" rel="stylesheet">
+ <title>Post-Property</title>
+ <link rel="shortcut icon" type="image/png" href="Images/favicon.png">
+ <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <header>
+   <div class="container">
+   <div id="branding">
+    <h1>ZB-Properties</h1>
+	</div>
+	<div class="hamburger">
+   <span class="bar"></span>
+   <span class="bar"></span>
+   <span class="bar"></span>
+   </div>
+   <nav>
+	<ul class="nav-menu">
+	<li class="nav-item"><a href="index.html">Home</a></li>
+	<div class="dropdown">
+   <li class="nav-item" class="dropbtn"><a href="">Property listings</a>
+   </li>
+    <div class="dropdown-content">
+   <a href="Searched properties.html">Searched property</a>
+   <a href="Post-Property.html">Post-Property</a>
+   <a href="My property list.html">My property list</a>
+   <a href="index.html">logout</a>
+    </div>
+  </div>
+	<li class="nav-item"><a href="Sign In.html">Sign In</a></li>
+
+   <li class="nav-item"><a href="Create an account.html">Create an account</a></li>
+	</ul>
+	</nav>
+
+</div>
+
+</header>
+
+<section id="section-1">
+ <div class="container_1">
+ <form>
+  <div class="step step-1 active ">
+  <h2>Your Property details</h2>
+   <div class="box">
+    <p>Property name <span>*</span></p>
+	<input type="text" name="property_name" maxlength="50" required placeholder="enter property name" class="input">
+   </div>
+   <div class="box">
+    <p>Property price <span>*</span></p>
+	<input type="number" name="price" maxlength="10" min="0" max="1000000000" required placeholder="enter property price" class="input">
+   </div>
+   <div class="box">
+    <p>Deposit amount <span>*</span></p>
+	<input type="number" name="property_name" maxlength="10" min="0" max="1000000000" required placeholder="enter deposit amount" class="input">
+   </div>
+   <div class="box">
+    <p>Property address <span>*</span></p>
+	<input type="text" name="property_name" maxlength="100" required placeholder="enter property address" class="input">
+   </div>
+    <button type="button" class="next-btn">Next</button>
+	</div>
+
+	<div class="step step-2 ">
+   <div class="box">
+    <p>Offer type <span>*</span></p>
+	<select name="offer" class="input" required>
+	 <option value="sale">Sale</option>
+	 <option value="rent">Rent</option>
+	 <option value="lease">Lease</option>
+	</select>
+   </div>
+   <div class="box">
+    <p>Property type <span>*</span></p>
+	<select name="offer" class="input" required>
+	 <option value="apartment">Apartments</option>
+	 <option value="flat">Flats</option>
+	 <option value="house">Houses</option>
+	 <option value="shop">Shops</option>
+	</select>
+   </div>
+   <div class="box">
+    <p>Property status <span>*</span></p>
+	<select name="status" class="input" required>
+	 <option value="ready to move in">ready to move in</option>
+	 <option value="still under construction">still under construction</option>
+	</select>
+   </div>
+   <div class="box">
+    <p>Furnished status <span>*</span></p>
+	<select name="furnished" class="input" required>
+	 <option value="furnished">furnished</option>
+	 <option value="semi-furnished">semi-furnished</option>
+	 <option value="unfurnished">unfurnished</option>
+	</select>
+   </div>
+   <button type="button" class="previous-btn">prev</button>
+  <button type="button" class="next-btn">Next</button>
+   </div>
+
+  <div class="step step-3 ">
+   <div class="box">
+    <p>Bedroom spaces <span>*</span></p>
+	<select name="bedroom" class="input" required>
+	 <option value="1">1 bedroom</option>
+	 <option value="2">2 bedroom</option>
+	 <option value="3">3 bedroom</option>
+	 <option value="4">4 bedroom</option>
+	 <option value="5">5 bedroom</option>
+	</select>
+   </div>
+   <div class="box">
+    <p>Bathroom availability <span>*</span></p>
+	<select name="bedroom" class="input" required>
+	 <option value="1">1 bathroom</option>
+	 <option value="2">2 bathroom</option>
+	 <option value="3">3 bathroom</option>
+	 <option value="4">4 bathroom</option>
+	 <option value="5">5 bathroom</option>
+	</select>
+   </div>
+   <div class="box">
+    <p>How many balconies? <span>*</span></p>
+	<select name="bedroom" class="input" required>
+	 <option value="0">0 balcony</option>
+	 <option value="1">1 balcony</option>
+	 <option value="2">2 balcony</option>
+	 <option value="3">3 balcony</option>
+	</select>
+   </div>
+   <div class="box">
+    <p>Property age <span>*</span></p>
+	<input type="number" name="age" maxlength="2" min="0" max="90" required placeholder="how old is the property?" class="input">
+   </div>
+   <button type="button" class="previous-btn">prev</button>
+   <button type="button" class="next-btn">Next</button>
+  </div>
+
+   <div class="step step-4 ">
+   <div class="box">
+    <p>Total floors <span>*</span></p>
+	<input type="number" name="total_floors" maxlength="2" min="0" max="8" required placeholder="how many floors are availabile?" class="input">
+   </div>
+   <div class="box">
+    <p>Loan <span>*</span></p>
+	<select name="des" class="input" required>
+	 <option value="availabile">available</option>
+	 <option value="not available">unavailable</option>
+	</select>
+   </div>
+   <div class="box">
+   <p>Property Image <span>*</span></p>
+   <input type="file" name="image" class="input" accept="image/*" required>
+   </div>
+   <button type="button" class="previous-btn">prev</button>
+  <button type="submit" class="submit-btn">post property</button>
+ </div>
+
+ </form>
+ </div>
+ </section>
+
+<script src="index.js"></script>
+
+</body>
+</html>
