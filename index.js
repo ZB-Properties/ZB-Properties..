@@ -1,11 +1,3 @@
-var modal = document.getElementById('id01');
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -59,6 +51,7 @@ document.querySelectorAll(".nav-item").forEach(n => n. addEventListener("click",
    steps[index].classList.add("active");
   }
 
+
 const viewBtns = document.querySelectorAll(
   ".viewBtn"
 );
@@ -75,10 +68,10 @@ const updateBtn = document.querySelector("#updateBtn");
 updateBtn.addEventListener("click", e => {
     e.preventDefault();
 	window.location.replace("Specific property 1.html");
-    updateForm.classList.add("sp-hide");
+   updateForm.classList.add("sp-hide");
   });
 
-  var modal = document.getElementById("myModal");
+var modal = document.getElementById("myModal");
  var btn = document.getElementById("deletePropertyBtn");
 
  btn.onclick = function() {
@@ -90,7 +83,7 @@ updateBtn.addEventListener("click", e => {
 	window.location.replace("My property list.html");
   });
 
-  noBtn.addEventListener("click", e => {
+noBtn.addEventListener("click", e => {
     e.preventDefault();
 	window.location.replace("Specific property 1.html");
   });

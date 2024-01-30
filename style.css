@@ -4,7 +4,7 @@ body{
 	Line-height: 1;
 	padding: 0;
 	margin: 0;
-	background-color: beige;
+	background-color: white;
 	box-sizing:border-box;
 }
 .container{
@@ -452,8 +452,7 @@ input{
 	display: none;
 }
 
-
-@media screen and (min-width: 560px) {
+@media screen and (max-width: 600px) {
 	.form_bottom {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -536,6 +535,32 @@ input{
   }
    .search_list {
 		flex-basis: 50%;
+	}
+	.table-2 th {
+		display: none;
+	}
+	.table-2 tr, .table-2 td {
+		display: block;
+		width: 100%;
+	}
+	 td:first-child {
+		background-color: rgb(0, 0, 71);
+		color: white;
+		text-align: center;
+	}
+	.table-2 tr {
+		margin-bottom: 15px;
+	}
+	.table-2 tbody tr td {
+		text-align: right;
+	}
+	.table-2 td::before {
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		text-align: left;
+		padding-left: 21px;
 	}
 }
 
@@ -655,7 +680,7 @@ article#main-col{
 	width:65%;
 }
 #showcase2{
-	min-height:400px;
+	min-height: 400px;
 	background: url('Images/about us.jpg') no-repeat 0 -400px;
 	position: relative;
 	text-align: center;
@@ -954,12 +979,11 @@ input: placeholder {
 .table_1 {
 	width: 650px;
 	background-color: white;
-	margin: auto;
-	padding: 15px;
-	border-radius: 5px;
-	box-shadow: 2px 2px 3px #333, -2px -2px 3px #333;
-	display: block;
-	margin-top: 25px;
+    margin: auto;
+	margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgb(197, 197, 197), -2px -2px 4px rgb(166, 166, 166);
 }
 .table_1 h2 {
 	display: block;
@@ -972,34 +996,7 @@ input: placeholder {
 	border-collapse: collapse;
 	width: 100%;
 }
-table {
-	display: table;
-	border-collapse: separate;
-	box-sizing: border box;
-	text-indent: initial;
-	border-spacing: 1px;
-	border-color: #ccc;
-}
-tbody {
-	display: table-row-group;
-	vertical-align: middle;
-	border-color: #ccc;
-}
-.table-2 tr:nth-child(even) {
-	background-color: lightgray;
-}
-tr {
-	display: table-row;
-	vertical-align: inherit;
-	border-color: inherit;
-}
 
-th {
-	display: table-cell;
-	vertical-align: inherit;
-	font-weight: 500;
-	text-align: internal;
-}
 .table-2 th {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -1009,21 +1006,23 @@ th {
 .table-2 tr > td:nth-child(1) {
 	text-align: left;
 }
-td{
-	display: table-cell;
-	vertical-align: inherit;
+.table-2 tr:nth-child(even) {
+	background-color: rgb(230, 230, 230);
+	transition: all 0.3s ease-in;
+	cursor: pointer;
 }
-.table-2 tr:hover {
-	background-color: #333;
-}
-
 .table-2 td ,.table-2 th{
 	border: 1px solid rgb(166, 166, 166);
 	text-align: center;
 	padding: 8px;
 }
+.table-2 tr:hover td {
+	background: rgb(204, 204, 204);
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+}
 .btn_9 {
-	display: block;
+	display: inline-block;
 	color: white;
 	background-color: rgb(255, 153, 102);
 	border: none;
@@ -1329,8 +1328,7 @@ img {
 	display: none;
 }
 .sp-update {
-	margin-top: 100px;
-	margin-right: 100px;
+	margin: auto;
 	display: flex;
 	justify-content: center;
 }
@@ -1339,6 +1337,7 @@ img {
 	height: 90px;
 	background-color: white;
 	margin: 10px;
+	margin-top: 120px;
 	padding: 15px;
 	border-radius: 5px;
 	justify-content: center;
@@ -1412,7 +1411,7 @@ img {
 	margin: auto;
 	padding: 21px;
 	border: 1px solid #333;
-	width: 25%;
+	width: 30%;
 }
 .sp-row4 {
 	margin-top: 15px;
