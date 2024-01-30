@@ -452,7 +452,7 @@ input{
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 420px) {
 	.form_bottom {
 		grid-template-columns: repeat(2, 1fr);
 	}
