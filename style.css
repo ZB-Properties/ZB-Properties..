@@ -571,7 +571,7 @@ input{
   
 }
 
-@media screen and (min-width:370px) and (max-width: 405px) {
+@media screen and (min-width:370px) and (max-width: 414px) {
    .popular_list {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -708,6 +708,10 @@ input{
 	.content-img {
 		margin-bottom: 15px;
 	}
+	.popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  }
 
 }
 
@@ -727,7 +731,7 @@ input{
   
 }
 
-@media screen and (min-width:524px) and (max-width:615px) {
+@media screen and (min-width:524px) and (max-width:699px) {
    .search_list {
 	gap: 20px;
 	display: grid;
@@ -813,7 +817,6 @@ input{
 @media screen and (min-width: 366px) and (max-width: 414px) {
    .table_1 {
 	max-width: 315px;
-	max-height: 128%;
 	margin-top: 40px;
     }
   .table_1 h2 {
@@ -859,7 +862,6 @@ input{
 @media screen and (min-width: 415px) and (max-width: 454px) {
    .table_1 {
 	max-width: 350px;
-	max-height: 230%;
 	margin-top: 40px;
     }
   .table_1 h2 {
@@ -904,7 +906,6 @@ input{
 @media screen and (min-width: 455px) and (max-width: 498px) {
   .table_1 {
 	max-width: 380px;
-	max-height: 300%;
 	margin-top: 40px;
     }
   .table_1 h2 {
@@ -951,7 +952,6 @@ input{
 @media screen and (min-width: 499px) and (max-width: 598px) {
   .table_1 {
 	max-width: 380px;
-	max-height: 140%;;
 	margin-top: 40px;
     }
   .table_1 h2 {
@@ -998,7 +998,6 @@ input{
 @media screen and (min-width: 599px) and (max-width: 699px) {
   .table_1 {
 	max-width: 430px;
-	height: 700px;
 	margin-top: 30px;
     }
   .table_1 h2 {
@@ -1052,6 +1051,7 @@ input{
 		font-size: 21px;
 	}
 	.popular_list {
+		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.service-section {
@@ -1072,9 +1072,10 @@ input{
   .search_list {
 		flex-basis: 50%;
 	}
+	
 }
 
-@media screen and (min-width: 700px) and (max-width: 768px) {
+@media screen  and (min-width: 700px) and (max-width: 768px) {
 	.hamburger {
 		display: block;
 	}
@@ -1105,6 +1106,7 @@ input{
 		left: 0;
 	}
 	.popular_list {
+		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.dropdown {float: none;}
@@ -1116,6 +1118,10 @@ input{
    .search_list {
 		flex-basis: 50%;
 	}
+	.table_1 {
+	max-width: 600px;
+	margin-top: 30px;
+    }
 	.table-2 th {
 	  display: none;
 	}
@@ -1180,7 +1186,7 @@ input{
 		grid-template-columns: repeat(3, 1fr) .5fr;
 	}
 	.popular_list {
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	}
 	.websie_content {
 		padding: 70px 60px;
@@ -1235,6 +1241,7 @@ input{
 	.nav-menu.active {
 		left: 0;
 	}
+	 
 }
 
 @media screen and (min-width: 1200px) {
@@ -1260,6 +1267,7 @@ input{
 	grid-template-columns: repeat(2, 1fr);
 	align-items: unset;
 	}
+	
 }
 
 aside#sidebar{
@@ -1576,8 +1584,7 @@ input: placeholder {
 	font-weight:300;
 	text-decoration: none;
 }
-
-.table_1 {
+ .table_1 {
 	width: 650px;
 	background-color: white;
     margin: auto;
@@ -1586,6 +1593,7 @@ input: placeholder {
     border-radius: 6px;
     box-shadow: 2px 2px 4px rgb(197, 197, 197), -2px -2px 4px rgb(166, 166, 166);
 }
+
 .table_1 h2 {
 	display: block;
 	font-size: 25px;
