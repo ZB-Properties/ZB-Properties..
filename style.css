@@ -500,6 +500,10 @@ input{
 	font-weight: 400px;
 	line-height: 14px;
   }
+   .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  }
   .popular h2 {
 	font-size: 20px;
 	font-weight: 700;
@@ -536,6 +540,10 @@ input{
 }
 
 @media screen and (min-width:315px) and (max-width: 346px) {
+   .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+ }
   .popular_item {
 	width: 133px;
 	height: 310px;
@@ -548,7 +556,10 @@ input{
 }
 
 @media screen and (min-width:347px) and (max-width: 369px) {
- 
+   .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+ }
   .popular_item {
 	width: 145px;
 	height: 310px;
@@ -561,6 +572,10 @@ input{
 }
 
 @media screen and (min-width:370px) and (max-width: 405px) {
+   .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  }
   .popular_item {
 	width: 155px;
 	height: 320px;
@@ -616,6 +631,10 @@ input{
 	font-weight: 400px;
 	line-height: 14px;
   }
+  .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+ }
   .popular h2 {
 	font-size: 19px;
 	font-weight: 700;
@@ -652,7 +671,11 @@ input{
 }
 
 @media screen and (min-width:405px) and (max-width: 445px) {
-  .popular_item {
+  .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  } 
+ .popular_item {
 	width: 170px;
 	height: 340px;
   }
@@ -663,6 +686,10 @@ input{
   
 }
 @media screen and (min-width:446px) and (max-width: 534px) {
+  .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  }
   .popular_item {
 	width: 190px;
 	height: 360px;
@@ -685,6 +712,10 @@ input{
 }
 
 @media screen and (min-width:535px) and (max-width: 581px) {
+  .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
   .popular_item {
 	width: 230px;
 	height: 400px;
@@ -741,6 +772,10 @@ input{
 	font-weight: 400px;
 	line-height: 15px;
   } 
+   .popular_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+ }
   .popular h2 {
 	font-size: 24px;
 	font-weight: 700;
